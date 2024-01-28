@@ -9,12 +9,12 @@ app.use(cors());
 const userRouter = require('./routes/userRoute');
 const productSchema = require('./routes/ProductRoute');
 
-require('dotenv').config();
+
 
 app.use(express.json());
 
 // Connect to MongoDB with the correct connection URL and options
-mongoose.connect(process.env.DATABASE_URL);
+mongoose.connect('mongodb+srv://ahmedcherif19x:123@cluster0.di7vh4t.mongodb.net/hroyal');
 
 const db = mongoose.connection;
 
