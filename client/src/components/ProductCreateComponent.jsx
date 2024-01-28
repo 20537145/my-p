@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { createProduct } from "../redux/productCreate";
-import '../style/ProductCreate.css'
 
 const ProductCreate = () => {
   const dispatch = useDispatch();

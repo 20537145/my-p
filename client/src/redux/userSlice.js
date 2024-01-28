@@ -22,7 +22,7 @@ export const registerUser = createAsyncThunk(
 );
 export const loginUser = createAsyncThunk("auth/login",async(check,{rejectedWithValue})=>{
   try {
-    const res = await axios.post("http://localhost:3000/login", check);
+    const res = await axios.post("http://localhost:6010/login", check);
       return res.data
   } catch (error) {
     return rejectedWithValue(error.response.data.message)

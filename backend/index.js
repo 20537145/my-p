@@ -23,7 +23,7 @@ db.once('open', () => {
   console.log('Connected to MongoDB');
 });
 
-const PORT = 5000;
+const PORT = 6010;
 app.listen(PORT, () => {
   console.log('The server is running on port ', PORT);
 });

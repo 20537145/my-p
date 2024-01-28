@@ -1,10 +1,7 @@
 
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import './style/App.css'
-import './style/Login.css'
-import './style/Footer.css'
-import './style/Button.css'
-import './style/HomePage.css'
+
 import NavLayout from './Pages/NavLayout';
 import HomePage from './Pages/HomePage';
 import About from './Pages/About';

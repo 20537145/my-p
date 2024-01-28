@@ -15,7 +15,7 @@ const AllProductsComponent = () => {
     <section className="products-section">
       {products.map((product) => (
         <div className="product-card" key={product._id}>
-          <img src={`http://localhost:3000/uploads/${product.image}`} alt={` ${product.name}`} />
+          <img src={`http://localhost:6010/uploads/${product.image}`} alt={` ${product.name}`} />
           <div className="product-details">
             <h2 className="product-name">{product.name}</h2>
             <p className="price">{product.price} DT</p>

@@ -4,7 +4,7 @@ import axios from 'axios';
 
 export const createProduct = createAsyncThunk('product/createProduct', async (productData) => {
   try {
-    const response = await axios.post('http://localhost:3000/products/create', productData);
+    const response = await axios.post('http://localhost:6010/products/create', productData);
     return response.data.product; // Assuming the server sends back the created product
   } catch (error) {
     console.error('Error creating product:', error);
